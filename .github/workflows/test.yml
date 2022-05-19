@@ -70,8 +70,8 @@ jobs:
         PGDATABASE: postgres
         PGHOST: localhost
         PGPORT: 5432
-        PGUSER: lidia
-        PGPASSWORD: lidia
+        PGUSER: postgres
+        PGPASSWORD: postgrespwd
       run: |
         cat bootstrap_ci.txt | python bootstrap.py
         yarn
