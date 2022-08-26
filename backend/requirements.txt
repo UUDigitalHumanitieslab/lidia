@@ -12,6 +12,10 @@ attrs==22.1.0
     # via pytest
 beautifulsoup4==4.11.1
     # via django-livereload-server
+certifi==2022.6.15
+    # via requests
+charset-normalizer==2.1.1
+    # via requests
 django==4.1
     # via
     #   -r requirements.in
@@ -26,6 +30,10 @@ djangorestframework==3.13.1
     # via -r requirements.in
 execnet==1.9.0
     # via pytest-xdist
+hypothesis-api==1.0.2
+    # via -r requirements.in
+idna==3.3
+    # via requests
 iniconfig==1.1.1
     # via pytest
 packaging==21.3
@@ -54,6 +62,8 @@ pytest-xdist==2.5.0
     # via -r requirements.in
 pytz==2022.2.1
     # via djangorestframework
+requests==2.28.1
+    # via -r requirements.in
 six==1.16.0
     # via django-livereload-server
 soupsieve==2.3.2.post1
@@ -65,4 +75,6 @@ tomli==2.0.1
 tornado==6.2
     # via django-livereload-server
 urllib3==1.26.12
-    # via django-revproxy
+    # via
+    #   django-revproxy
+    #   requests
