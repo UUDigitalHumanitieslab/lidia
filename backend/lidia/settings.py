@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'revproxy',
+    'annotations',
     'example'
 ]
 
@@ -116,8 +117,6 @@ TIME_ZONE = 'Europe/Amsterdam'
 
 USE_I18N = True
 
-USE_L10N = True
-
 USE_TZ = True
 
 
@@ -128,3 +127,6 @@ STATIC_URL = '/static/'
 
 STATICFILES_DIRS = []
 PROXY_FRONTEND = None
+
+HYPOTHESIS_API_DOMAIN = 'hypothes.is'
+HYPOTHESIS_GROUP_ID = 'VkNWRvMo'
