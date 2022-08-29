@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'livereload',
     'django.contrib.staticfiles',
+    'corsheaders',
     'rest_framework',
     'revproxy',
     'annotations',
@@ -43,6 +44,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -130,3 +132,5 @@ PROXY_FRONTEND = None
 
 HYPOTHESIS_API_DOMAIN = 'hypothes.is'
 HYPOTHESIS_GROUP_ID = 'VkNWRvMo'
+
+CORS_ALLOW_ALL_ORIGINS = True

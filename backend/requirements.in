@@ -8,3 +8,4 @@ pytest-django
 pytest-xdist
 hypothesis-api
 requests
+django-cors-headers
