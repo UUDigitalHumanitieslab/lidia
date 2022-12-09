@@ -79,11 +79,11 @@ WSGI_APPLICATION = 'lidia.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'lidia',
-        'USER': 'lidia',
-        'PASSWORD': 'lidia',
-        'HOST': 'localhost',
-        'PORT': '5432',
+        'NAME': os.environ.get('PGDATABASE') or 'lidia',
+        'USER': os.environ.get('PGUSER') or 'lidia',
+        'PASSWORD': os.environ.get('PGPASSWORD') or 'lidia',
+        'HOST': os.environ.get('PGHOST') or 'localhost',
+        'PORT': os.environ.get('PGPORT') or '5432',
     }
 }
 
