@@ -16,7 +16,7 @@
 
 project = 'LIDIA'
 copyright = '2023'
-author = 'The LIDIA authors'
+author = 'Utrecht University'
 
 
 # -- General configuration ---------------------------------------------------

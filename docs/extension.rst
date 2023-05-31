@@ -18,10 +18,8 @@ option button in the upper-right corner of the window and click
 extension will be activated.
 
 .. note::
-   If you already have opened PDFs in your Zotero window, you will need to
-   close them and reopen them after activating the extension.
-   If the extension still does not work correctly, try to restart Zotero
-   completely.
+   The extension should work immediately after activating it. If this is
+   not the case, try restarting Zotero.
 
 Activating synchronization with the LIDIA Zotero group
 ------------------------------------------------------
@@ -98,6 +96,58 @@ can be converted to LIDIA extensions, however.
 .. note::
    It is not possible to edit annotations by selecting the annotations
    from within the text -- you have to use the sidebar on the left.
+
+Annotations that run on multiple pages
+--------------------------------------
+Zotero does not allow annotations that run over the borders of a single page.
+It is possible to annotate text that covers multiple pages, but Zotero will
+create multiple annotations for it automatically. To annotate an argument that
+runs over multiple pages, do the following:
+
+* Create an annotation for all of the text. Zotero will automatically split
+  this up into one annotation per page.
+* Select the first created annotation (on the first page of the text), fill
+  out the LIDIA form, and save the annotation
+* Select the annotations on the subsequent pages one by one, select the
+  checkbox **Annotation is continuation of previous argument**, and save. You
+  will see that the rest of the form will be greyed out and that the information
+  that you just have filled in is shown.
+
+LIDIA does not support annotations that run across multiple non-continious
+annotations. Instead, you may use the **Relation** field to indicate that
+there are multiple annotations for one linguistic argument.
+
+Relations between annotations
+-----------------------------
+Use the **Relation** field to indicate that an annotation is somehow
+related to a different annotation. The first box defines the
+type of the relation, such as *Contradicts* and *Generalizes*. In the
+second box you indicate to which annotation it is related. You can select from
+all LIDIA annotations from the same Zotero library as that of the document
+that you are currently working in. The references to the annotations
+are shown using the title of the document and the name of the argument,
+separated by a colon (:).
+
+Setting default values
+----------------------
+It is possible to set default values for certain fields that are likely
+to remain the same throughout a document. To do that, go to the library tab
+(the leftmost tab), select the parent bibliographical item of the PDF file,
+and go to the **Extra** field at the right side of the screen inside the
+**Info** tab. This field is normally empty, but you can add LIDIA defaults to
+it, such as:
+
+::
+
+  lidia.arglang: eng
+  lidia.arglevel: General
+
+This will set the default argument language to English, and the default
+lexicon term category to General. For ``lidia.arglang``, choose the
+right ISO 639-3 language code (codes consisting of three characters, such as
+``nld`` for Dutch). For ``lidia.arglevel``, choose from the lexicon term
+categories that you find in the LIDIA form in the first combo box of the
+**Lexicon term** field.
 
 Working with existing PDF annotations
 -------------------------------------
