@@ -2,7 +2,8 @@
 The LIDIA Zotero extension
 ==========================
 
-
+.. note::
+   This part of the manual is updated for version 0.3.0 of the extension.
 
 
 Installing the extension
@@ -139,15 +140,16 @@ it, such as:
 
 ::
 
-  lidia.arglang: eng
-  lidia.arglevel: General
+  lidia.default_arglang: eng
+  lidia.default_termcategory: morphosyntax
 
 This will set the default argument language to English, and the default
-lexicon term category to General. For ``lidia.arglang``, choose the
+lexicon term category to General. For ``lidia.default_arglang``, choose the
 right ISO 639-3 language code (codes consisting of three characters, such as
-``nld`` for Dutch). For ``lidia.arglevel``, choose from the lexicon term
-categories that you find in the LIDIA form in the first combo box of the
-**Lexicon term** field.
+``nld`` for Dutch). For ``lidia.default_termcategory``, choose from the
+lexicon term categories that you find in the LIDIA form in the first combo box
+of the **Lexicon term** field, but in lowercase and with spaces replaced by
+dashes (such as ``part-of-speech``).
 
 Working with existing PDF annotations
 -------------------------------------
